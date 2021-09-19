@@ -38,7 +38,7 @@ body {
 ul {
 	list-style: none;
 }
-.site-nav a {
+.site-nav .link {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: 500;
@@ -48,7 +48,9 @@ ul {
 
 	color: var(--title-text-color);
 }
-
+.site-nav .link.current {
+	color: var(--accent-color);
+}
 .link-post {
 	position: absolute;
 	width: 135px;
@@ -85,8 +87,8 @@ ul {
 .link-phone :focus,
 .link-post:hover,
 .link-post :focus,
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
 	color: var(--accent-color);
 }
 /* hero */
