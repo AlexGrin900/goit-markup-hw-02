@@ -11,7 +11,9 @@
 	--title-text-color: #212121;
 	--accent-color: #2196f3;
 	--white-color: #fff;
-	--third-bcg-color:#F5F4FA;
+	--secondary-bcg-color:#F5F4FA;
+	--bcg-color:#2F303A;
+	--footer-text-color:rgba(255, 255, 255, 0.6);
 
 
 }
@@ -92,11 +94,11 @@ body {
 }
 /* hero */
 .hero {
-	background: #2f303a;
+	background:var(--bcg-color);
 }
 .hero-title {
 	position: absolute;
-	background: #2f303a;
+	background: var(--bcg-color);
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -187,7 +189,7 @@ body {
 	font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color:var(--primary-text-color);
+    color:var(--footer-text-color);
 
 }
 address{
