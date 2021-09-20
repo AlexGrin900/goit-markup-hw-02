@@ -4,87 +4,69 @@
 /* акцент #2196F3/*/
 /* контакты футер #rgba(255, 255, 255, 0.6)*/
 /* вторичный цвет фона #2F303A */
-/* цвет секции наша команда #F5F4FA */
+/* цвет секции наша команда #F5F4FA*/
 /*header */
 :root {
 	--primary-text-color: #757575;
 	--title-text-color: #212121;
 	--accent-color: #2196f3;
 	--white-color: #fff;
+	--third-bcg-color:#F5F4FA;
+
+
 }
 body {
 	background: var(--white-color);
 	color: var(--primary-text-color);
 	font-family: Roboto;
-}
+	letter-spacing: 0.02em;
 
+}
 /*header */
 .logo {
 	text-decoration: none;
-	position: absolute;
-	width: 145px;
-	height: 31px;
-	left: 215px;
-	top: 24px;
-
-	font-family: Ralevay;
-	font-style: normal;
-	font-weight: bold;
+	font-family: Raleway;
 	font-size: 26px;
+	line-height: 1.19;
 	color: var(--accent-color);
 }
 .logo-s {
 	color: var(--title-text-color);
 }
-ul {
-	list-style: none;
+.logo-f {
+	text-decoration: none;
+	font-family: Raleway;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--accent-color);
 }
+.logo-fs {
+	color: var(--white-color);
+}
+
 .site-nav .link {
 	text-decoration: none;
-	font-family: Roboto;
-	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 0.02em;
-
+	line-height: 1.14;
 	color: var(--title-text-color);
 }
 .site-nav .link.current {
 	color: var(--accent-color);
 }
+
 .link-post {
 	text-decoration: none;
-	position: absolute;
-	width: 135px;
-	height: 16px;
-	left: 1078px;
-	top: 32px;
-
-	font-family: Roboto;
-	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 0.02em;
+	line-height: 1.14;
 	color: var(--primary-text-color);
 }
-
 .link-phone {
 	text-decoration: none;
-	position: absolute;
-	width: 122px;
-	height: 16px;
-	left: 1263px;
-	top: 32px;
-
-	font-family: Roboto;
-	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 0.02em;
-
+	line-height: 1.14;
 	color: var(--primary-text-color);
 }
 .link-phone:hover,
@@ -95,47 +77,58 @@ ul {
 .site-nav .link:focus {
 	color: var(--accent-color);
 }
+.site-nav,
+.auth-nav,
+.work-list,
+.third-section,
+.team-list,
+.address-list,
+.buttons-list
+{
+	list-style: none;
+}
 /* hero */
 .hero {
-	position: absolute;
-	width: 1600px;
-	height: 600px;
-	left: 0px;
-	top: 80px;
 	background: #2f303a;
 }
 .hero-title {
 	position: absolute;
-	width: 696px;
-	height: 120px;
-	left: 452px;
-	top: 280px;
-
-	font-family: Roboto;
-	font-style: normal;
+	background: #2f303a;
 	font-weight: 900;
 	font-size: 44px;
-	line-height: 60px;
-	/* or 136% */
-
+	line-height: 1.36;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 
 	color: var(--white-color);
 }
-.button-hero {
-	position: absolute;
+.button-hero{
 	width: 200px;
-	height: 50px;
-	left: 700px;
-	top: 430px;
-
+    height: 50px;
+	font-weight: bold;
 	background: var(--accent-color);
 	color: var(--white-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	cursor: pointer;
+}
+
+.section-title {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
+}
+/* How we make a job */
+.hidden-title {
+	color: var(--white-color);
+}
+/* team section */
+.team-title {
+	background: #f5f4fa;
 }
 /* work-list */
 .item-worklist {
@@ -147,4 +140,53 @@ ul {
 }
 .title {
 	color: var(--title-text-color);
+}
+.button-filters:focus .button-filters:hover {
+	color: var(--accent-color);
+}
+
+.button{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background:var(--third-bcg-color);
+  border-radius: 4px
+}
+.button:hover,
+.button:focus,
+.button:active{
+	font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color:var(--white-color);
+  background:var(--accent-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer {
+	background: #2f303a;
+}
+.address-link {
+	text-decoration: none;
+	font-style: normal
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	color: var(--white-color);
+}
+.contacts-link {
+	text-decoration: none;
+	font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color:var(--primary-text-color);
+
+}
+address{
+	font-style:normal;
 }
