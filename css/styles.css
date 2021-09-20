@@ -26,6 +26,7 @@ body {
 .logo {
 	text-decoration: none;
 	font-family: Raleway;
+	font-weight: 700px;
 	font-size: 26px;
 	line-height: 1.19;
 	color: var(--accent-color);
@@ -36,6 +37,7 @@ body {
 .logo-f {
 	text-decoration: none;
 	font-family: Raleway;
+	font-weight: 700px;
 	font-size: 26px;
 	line-height: 1.19;
 	color: var(--accent-color);
@@ -83,7 +85,8 @@ body {
 .third-section,
 .team-list,
 .address-list,
-.buttons-list
+.buttons-list,
+.project-list
 {
 	list-style: none;
 }
