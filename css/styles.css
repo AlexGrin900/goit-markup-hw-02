@@ -38,7 +38,7 @@ body {
 	color: var(--white-color);
 }
 /* Site-nav */
-.site-nav .link {	
+.site-nav .link {
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
@@ -48,13 +48,13 @@ body {
 	color: var(--accent-color);
 }
 
-.link-post {	
+.link-post {
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
 }
-.link-phone {	
+.link-phone {
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
@@ -65,13 +65,17 @@ body {
 .link-post:hover,
 .link-post :focus,
 .site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:focus,
+.address-link:hover,
+.address-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
 	color: var(--accent-color);
 }
 .list {
 	list-style: none;
 }
-.link{
+.link {
 	text-decoration: none;
 }
 /* hero */
@@ -91,12 +95,12 @@ body {
 }
 .button-hero {
 	font-family: Roboto;
-   font-size: 16px;
-   line-height: 1.9;
-   letter-spacing: 0.06em;
-   cursor: pointer;
-   background: var(--accent-color);
-   color: var(--white-color);
+	font-size: 16px;
+	line-height: 1.9;
+	letter-spacing: 0.06em;
+	cursor: pointer;
+	background: var(--accent-color);
+	color: var(--white-color);
 }
 
 .section-title {
@@ -107,10 +111,10 @@ body {
 	color: var(--title-text-color);
 }
 /* How we make a job */
-}
+
 /* team section */
-.team-list {
-	background: #f5f4fa;
+.team-section {
+	background: var(--secondary-bcg-color);
 }
 /* work-list */
 .item-worklist {
@@ -121,9 +125,12 @@ body {
 	color: var(--title-text-color);
 }
 .title {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--title-text-color);
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--title-text-color);
+}
+.link-p {
+	color: inherit;
 }
 
 /*Buttons */
@@ -132,17 +139,17 @@ body {
 	font-size: 16px;
 	line-height: 1.6;
 	text-align: center;
-    color: var(--title-text-color);
+	color: var(--title-text-color);
 	background: var(--third-bcg-color);
 	border-radius: 4px;
-	cursor: pointer
+	cursor: pointer;
 }
 .button:hover,
 .button:focus,
 .button:active,
-.current-btn  {
- color:var(--white-color);
- background:var(--accent-color);
+.current-btn {
+	color: var(--white-color);
+	background: var(--accent-color);
 }
 .footer {
 	background: #2f303a;
