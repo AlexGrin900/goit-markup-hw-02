@@ -11,12 +11,9 @@
 	--title-text-color: #212121;
 	--accent-color: #2196f3;
 	--white-color: #fff;
-	--secondary-bcg-color:#F5F4FA;
-	--bcg-color:#2F303A;
-	--footer-text-color:rgba(255, 255, 255, 0.6);
-
-
-
+	--secondary-bcg-color: #f5f4fa;
+	--bcg-color: #2f303a;
+	--footer-text-color: rgba(255, 255, 255, 0.6);
 }
 body {
 	background: var(--white-color);
@@ -25,13 +22,11 @@ body {
 	letter-spacing: 0.03em;
 	font-size: 14px;
 	line-height: 1.71;
-
 }
 /*header */
 .logo {
-	text-decoration: none;
 	font-family: Raleway;
-	font-weight: 700px;
+	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
 	color: var(--accent-color);
@@ -39,22 +34,12 @@ body {
 .logo-s {
 	color: var(--title-text-color);
 }
-.logo-f {
-	text-decoration: none;
-	font-family: Raleway;
-	font-weight: 700px;
-	font-size: 26px;
-	line-height: 1.19;
-	color: var(--accent-color);
-}
 .logo-fs {
 	color: var(--white-color);
 }
 /* Site-nav */
-.site-nav .link {
-	text-decoration: none;
+.site-nav .link {	
 	font-weight: 500;
-	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--title-text-color);
@@ -63,18 +48,14 @@ body {
 	color: var(--accent-color);
 }
 
-.link-post {
-	text-decoration: none;
+.link-post {	
 	font-weight: 500;
-	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
 }
-.link-phone {
-	text-decoration: none;
+.link-phone {	
 	font-weight: 500;
-	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
@@ -87,23 +68,17 @@ body {
 .site-nav .link:focus {
 	color: var(--accent-color);
 }
-.site-nav,
-.auth-nav,
-.work-list,
-.third-section,
-.team-list,
-.address-list,
-.buttons-list,
-.project-list
-{
+.list {
 	list-style: none;
+}
+.link{
+	text-decoration: none;
 }
 /* hero */
 .hero {
-	background:var(--bcg-color);
+	background: var(--bcg-color);
 }
 .hero-title {
-	position: absolute;
 	background: var(--bcg-color);
 	font-weight: 900;
 	font-size: 44px;
@@ -114,15 +89,14 @@ body {
 
 	color: var(--white-color);
 }
-.button-hero{
-	width: 200px;
-    height: 50px;
-	font-weight: bold;
-	background: var(--accent-color);
-	color: var(--white-color);
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	cursor: pointer;
+.button-hero {
+	font-family: Roboto;
+   font-size: 16px;
+   line-height: 1.9;
+   letter-spacing: 0.06em;
+   cursor: pointer;
+   background: var(--accent-color);
+   color: var(--white-color);
 }
 
 .section-title {
@@ -130,18 +104,13 @@ body {
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
-	letter-spacing: 0.03em;
 	color: var(--title-text-color);
 }
 /* How we make a job */
-.hidden-title {
-	color: var(--white-color);
 }
 /* team section */
-.team-title {
+.team-list {
 	background: #f5f4fa;
-	letter-spacing: 0.02em;
-
 }
 /* work-list */
 .item-worklist {
@@ -152,54 +121,38 @@ body {
 	color: var(--title-text-color);
 }
 .title {
-	color: var(--title-text-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--title-text-color);
 }
-.button-filters:focus .button-filters:hover {
-	color: var(--accent-color);
-}
-/*  */
-.button{
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
- 
-  background:var(--third-bcg-color);
-  border-radius: 4px
+
+/*Buttons */
+.button {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+    color: var(--title-text-color);
+	background: var(--third-bcg-color);
+	border-radius: 4px;
+	cursor: pointer
 }
 .button:hover,
 .button:focus,
-.button:active{
-	font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-
-  color:var(--white-color);
-  background:var(--accent-color);
-  border-radius: 4px;
-  cursor: pointer;
+.button:active,
+.current-btn  {
+ color:var(--white-color);
+ background:var(--accent-color);
 }
-
 .footer {
 	background: #2f303a;
 }
 .address-link {
-	text-decoration: none;
-	font-style: normal
-	font-size: 14px;
-	line-height: 24px;
-	
 	color: var(--white-color);
 }
 .contacts-link {
-	text-decoration: none;
-	font-size: 14px;
-    line-height: 24px;
-   
-    color:var(--footer-text-color);
-
+	color: var(--footer-text-color);
 }
-address{
-	font-style:normal;
+address {
+	font-style: normal;
 }
